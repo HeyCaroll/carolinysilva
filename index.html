@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caroliny silva</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header  -->
+
+<header>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#sobre">sobre</a>
+        <a href="#projetos">projetos</a>
+    </nav>
+
+</header>
+
+<!-- header --->
+
+<!-- home  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="images/home-pic.png" alt="">
+        <h3> carol <span>silva</span> </h3>
+        <p> eu sou <span class="typing-text">  </span> </p>
+        <a href="#sobre" class="btn">sobre mim</a>
+    </div>
+
+</section>
+
+<!-- home  -->
+
+<!-- sobre  -->
+
+<section class="sobre" id="sobre">
+
+    <h1 class="heading"> sobre <span>mim</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/sobre-pic.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3> meu nome é <span> Caroliny Silva </span> </h3>
+            <p class="info">Entusiasmada com a tecnologia e robotica desde os meus 15 anos, venho estudando desde então. Possuo como objetivo apresentar, disseminar e ensinar esse vasto mundo da programação para todos &#128214 .</p>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> idade: </span> 17 </p>
+                    <p> <span> gênero: </span> feminino </p>
+                    <p> <span> experiência  : </span> 2 anos </p>
+
+                </div>
+                <div class="box">
+                    <p> <span> idiomas : </span> português / Inglês </p>
+                    <p> <span> email : </span> caroliny.silv4@gmail.com </p>
+                    <p> <span>endereço : </span> Lorena-SP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- sobre -->
+
+
+<!-- portfolio  -->
+
+<section class="projetos" id="projetos">
+
+    <h1 class="heading"> <span> meus </span> projetos</h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <img src="images/img-1.png" alt="">
+            <div class="content">
+                <a href="https://github.com/HeyCaroll/arduino" class="btn">saiba mais</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="images/img-2.png" alt="">
+            <div class="content">
+                <a href="https://github.com/HeyCaroll/FRC-OffSeason2022" class="btn">saiba mais</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="images/img-3.png" alt="">
+            <div class="content">
+                <a href="#" class="btn"></a>
+            </div>
+        </div>
+
+
+    </div>
+    
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- footer section  -->
+
+<div class="footer"> criado com amor por  <span> <a href="https://www.instagram.com/hey.caroll/">Caroliny Silva</a> </span>  </div>
+
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- particles.js links  -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+var typed = new Typed('.typing-text', {
+    strings : ['','dev. back-end','"robotiquer 🤖"', 'dev. python'],
+    loop : true,
+    typeSpeed : 190
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
+</body>
+</html>
